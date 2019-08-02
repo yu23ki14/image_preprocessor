@@ -1,0 +1,26 @@
+.create-project-modal.modal
+  .modal-container.col-4.col-md-6.p-y-30.col-sm-12
+    .close-modal
+      i.fa.fa-times
+    
+    .flex-container.flex-center
+      .col-10
+        h4.row-space-top-3.text-center
+          |新規プロジェクト
+        = form_for project_new do |f|
+            .flex-container.flex-wrap.flex-center
+              .col-10.col-center
+                 = f.label :name
+                    p プロジェクト名
+                 = f.text_field :name, placeholder: "プロジェクト名", class: "col-12 col-center"
+                 
+                 = f.label :summary
+                    p サマリー
+                 = f.text_area :summary, placeholder: "プロジェクトサマリー", class: "col-12 col-center"
+                 
+                 = f.label :summary
+                    p ディレクトリ名
+                 = f.text_field :images_path, placeholder: "ディレクトリ名", class: "col-12 col-center"
+                  
+              .col-12.col-center.text-center
+                = f.submit "立ち上げ", class: "button button-primary"

@@ -1,0 +1,23 @@
+.page-container
+    h5
+        span.current-step
+            |1
+        |/#{@files.length}
+    .flex-container.flex-wrap.flex-a-start
+        .cropper-container.col-6
+            = image_tag @files.first, id: "trimed_image"
+        .cropper-controller.col-6.p-l-20
+            = link_to "javascript:void(0)", class: "button button-primary-outline js-save-next"
+                | F 保存して次の写真へ
+            br
+            = link_to "javascript:void(0)", class: "button button-primary-outline row-space-top-2 js-save"
+                | D 保存する
+            br
+            = link_to "javascript:void(0)", class: "button button-primary-outline row-space-top-2 js-next"
+                | S 次の写真へ
+            br
+            = link_to "javascript:void(0)", class: "button button-primary-outline row-space-top-2 js-prev"
+                | A 前の写真へ
+
+.result-toaster.text-contrast
+    |success

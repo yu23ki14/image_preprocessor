@@ -1,0 +1,10 @@
+.page-container
+    h3 プロジェクト名: #{@project.name}
+    h4 #{@files.length} images
+    = link_to "/projects/#{@project.id}/cropper", class: "button button-primary"
+      |Clopper
+    
+    .flex-container.flex-wrap
+      - @files.take(18).each do |file|
+        .col-2
+          = image_tag file, class: "col-12" 

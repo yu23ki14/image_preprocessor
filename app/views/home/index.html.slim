@@ -1,0 +1,8 @@
+.page-container
+  .flex-container.flex-wrap
+    - @projects.each do |p|
+      .col-3.col-md-4
+        = link_to p
+          .box-shadow-primary.m-x-5.m-y-5.p-x-10.p-y-10
+            h3.m-t-0 プロジェクトタイトル
+            p サマリーサマリーサマリーサマリーサマリー
