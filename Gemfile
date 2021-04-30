@@ -38,7 +38,7 @@ gem 'mini_magick', '~> 4.8'
 
 gem 'rubyzip', '~> 1.2.3'
 
-gem 'gon', '~> 6.2.1'
+gem 'gon', '~> 6.4.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
